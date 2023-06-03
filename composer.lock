@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "a1fb6ea115b766e524727f63ef11cad8",
     "packages": [
         {
             "name": "brick/math",
@@ -2890,6 +2890,63 @@
             "time": "2023-01-12T18:13:24+00:00"
         },
         {
+            "name": "sop/gcm",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sop/gcm.git",
+                "reference": "dc42ca748431e7acc454657cbab14cbbd48bb10d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sop/gcm/zipball/dc42ca748431e7acc454657cbab14cbbd48bb10d",
+                "reference": "dc42ca748431e7acc454657cbab14cbbd48bb10d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gmp": "*",
+                "ext-hash": "*",
+                "ext-openssl": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sop\\GCM\\": "lib/GCM/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joni Eskelinen",
+                    "email": "jonieske@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP library for Galois/Counter Mode encryption with AES.",
+            "homepage": "https://github.com/sop/gcm",
+            "keywords": [
+                "AES-GCM",
+                "Galois Counter Mode",
+                "aes",
+                "decrypt",
+                "encrypt",
+                "galois",
+                "gcm"
+            ],
+            "support": {
+                "issues": "https://github.com/sop/gcm/issues",
+                "source": "https://github.com/sop/gcm/tree/3.0.0"
+            },
+            "time": "2019-05-23T10:37:33+00:00"
+        },
+        {
             "name": "symfony/console",
             "version": "v6.2.3",
             "source": {
@@ -5616,6 +5673,67 @@
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
+            "name": "laravel/breeze",
+            "version": "v1.17.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "5d9ff31af5ddfe86ddf7bcd22df7b61818dcc2c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/5d9ff31af5ddfe86ddf7bcd22df7b61818dcc2c1",
+                "reference": "5d9ff31af5ddfe86ddf7bcd22df7b61818dcc2c1",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^9.21",
+                "illuminate/filesystem": "^9.21",
+                "illuminate/support": "^9.21",
+                "illuminate/validation": "^9.21",
+                "php": "^8.0.2"
+            },
+            "conflict": {
+                "laravel/framework": "<9.37.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2023-01-03T14:13:49+00:00"
+        },
+        {
             "name": "laravel/pint",
             "version": "v1.4.0",
             "source": {
@@ -7808,7 +7926,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.0.2"
+        "php": "^8.0.2",
+        "ext-openssl": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
